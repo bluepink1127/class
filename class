@@ -1,0 +1,24 @@
+class Ball{
+// properties
+ float x;
+ float y;
+ float xSpeed;
+ float ySpeed;
+ float size;
+// methods
+  void move(){
+    x+=xSpeed;
+    y+=ySpeed;
+ }
+  void display(){
+    ellipse(x,y,size,size);
+ }
+// constructor
+  Ball(){
+  x = random(width);
+  y = random(height);
+  xSpeed = 1;
+  ySpeed = 0;
+  size   = 10;
+ }
+}
